@@ -12,7 +12,41 @@
 		05C6132F2BE0180A00802E94 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C6132E2BE0180A00802E94 /* Item.swift */; };
 		05C613312BE0180C00802E94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05C613302BE0180C00802E94 /* Assets.xcassets */; };
 		05C613352BE0180C00802E94 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05C613342BE0180C00802E94 /* Preview Assets.xcassets */; };
+		05C6133E2BE01ED300802E94 /* HoleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C6133D2BE01ED300802E94 /* HoleView.swift */; };
+		05C613502BE0340C00802E94 /* watchgolfgolf Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 05C613432BE0340B00802E94 /* watchgolfgolf Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		05C6137F2BE70F3100802E94 /* FinishGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C613792BE70F3100802E94 /* FinishGameView.swift */; };
+		05C613802BE70F3100802E94 /* ConnectivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C6137A2BE70F3100802E94 /* ConnectivityManager.swift */; };
+		05C613812BE70F3100802E94 /* HoleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C6137B2BE70F3100802E94 /* HoleView.swift */; };
+		05C613822BE70F3100802E94 /* SnapShotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C6137C2BE70F3100802E94 /* SnapShotView.swift */; };
+		05C613832BE70F3100802E94 /* watchgolfgolfApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C6137D2BE70F3100802E94 /* watchgolfgolfApp.swift */; };
+		05C613842BE70F3100802E94 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C6137E2BE70F3100802E94 /* ContentView.swift */; };
+		05C613882BE719ED00802E94 /* ConnectivitySessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C613872BE719ED00802E94 /* ConnectivitySessionManager.swift */; };
+		05C6138A2BE7254900802E94 /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C613892BE7254900802E94 /* StatsView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		05C6134E2BE0340C00802E94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05C6131F2BE0180A00802E94 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05C613422BE0340B00802E94;
+			remoteInfo = "watchgolfgolf Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		05C613542BE0340C00802E94 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				05C613502BE0340C00802E94 /* watchgolfgolf Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		05C613272BE0180A00802E94 /* golfgolf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = golfgolf.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +56,27 @@
 		05C613302BE0180C00802E94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		05C613322BE0180C00802E94 /* golfgolf.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = golfgolf.entitlements; sourceTree = "<group>"; };
 		05C613342BE0180C00802E94 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		05C6133D2BE01ED300802E94 /* HoleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoleView.swift; sourceTree = "<group>"; };
+		05C613432BE0340B00802E94 /* watchgolfgolf Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "watchgolfgolf Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		05C613792BE70F3100802E94 /* FinishGameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FinishGameView.swift; path = ../../../.Trash/FinishGameView.swift; sourceTree = "<group>"; };
+		05C6137A2BE70F3100802E94 /* ConnectivityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConnectivityManager.swift; path = ../../../.Trash/ConnectivityManager.swift; sourceTree = "<group>"; };
+		05C6137B2BE70F3100802E94 /* HoleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HoleView.swift; path = ../../../.Trash/HoleView.swift; sourceTree = "<group>"; };
+		05C6137C2BE70F3100802E94 /* SnapShotView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapShotView.swift; path = ../../../.Trash/SnapShotView.swift; sourceTree = "<group>"; };
+		05C6137D2BE70F3100802E94 /* watchgolfgolfApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = watchgolfgolfApp.swift; path = ../../../.Trash/watchgolfgolfApp.swift; sourceTree = "<group>"; };
+		05C6137E2BE70F3100802E94 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = ../../../.Trash/ContentView.swift; sourceTree = "<group>"; };
+		05C613872BE719ED00802E94 /* ConnectivitySessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectivitySessionManager.swift; sourceTree = "<group>"; };
+		05C613892BE7254900802E94 /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		05C613242BE0180A00802E94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05C613402BE0340B00802E94 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				05C613292BE0180A00802E94 /* golfgolf */,
+				05C613442BE0340B00802E94 /* watchgolfgolf Watch App */,
 				05C613282BE0180A00802E94 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				05C613272BE0180A00802E94 /* golfgolf.app */,
+				05C613432BE0340B00802E94 /* watchgolfgolf Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,7 +108,10 @@
 			isa = PBXGroup;
 			children = (
 				05C6132A2BE0180A00802E94 /* golfgolfApp.swift */,
+				05C613872BE719ED00802E94 /* ConnectivitySessionManager.swift */,
 				05C6132C2BE0180A00802E94 /* ContentView.swift */,
+				05C613892BE7254900802E94 /* StatsView.swift */,
+				05C6133D2BE01ED300802E94 /* HoleView.swift */,
 				05C6132E2BE0180A00802E94 /* Item.swift */,
 				05C613302BE0180C00802E94 /* Assets.xcassets */,
 				05C613322BE0180C00802E94 /* golfgolf.entitlements */,
@@ -72,6 +128,27 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		05C613442BE0340B00802E94 /* watchgolfgolf Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				05C6137A2BE70F3100802E94 /* ConnectivityManager.swift */,
+				05C6137D2BE70F3100802E94 /* watchgolfgolfApp.swift */,
+				05C6137E2BE70F3100802E94 /* ContentView.swift */,
+				05C6137B2BE70F3100802E94 /* HoleView.swift */,
+				05C613792BE70F3100802E94 /* FinishGameView.swift */,
+				05C6137C2BE70F3100802E94 /* SnapShotView.swift */,
+				05C6134B2BE0340C00802E94 /* Preview Content */,
+			);
+			path = "watchgolfgolf Watch App";
+			sourceTree = "<group>";
+		};
+		05C6134B2BE0340C00802E94 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -82,14 +159,33 @@
 				05C613232BE0180A00802E94 /* Sources */,
 				05C613242BE0180A00802E94 /* Frameworks */,
 				05C613252BE0180A00802E94 /* Resources */,
+				05C613542BE0340C00802E94 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05C6134F2BE0340C00802E94 /* PBXTargetDependency */,
+			);
+			name = golfgolf;
+			productName = golfgolf;
+			productReference = 05C613272BE0180A00802E94 /* golfgolf.app */;
+			productType = "com.apple.product-type.application";
+		};
+		05C613422BE0340B00802E94 /* watchgolfgolf Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05C613512BE0340C00802E94 /* Build configuration list for PBXNativeTarget "watchgolfgolf Watch App" */;
+			buildPhases = (
+				05C6133F2BE0340B00802E94 /* Sources */,
+				05C613402BE0340B00802E94 /* Frameworks */,
+				05C613412BE0340B00802E94 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = golfgolf;
-			productName = golfgolf;
-			productReference = 05C613272BE0180A00802E94 /* golfgolf.app */;
+			name = "watchgolfgolf Watch App";
+			productName = "watchgolfgolf Watch App";
+			productReference = 05C613432BE0340B00802E94 /* watchgolfgolf Watch App.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -103,6 +199,9 @@
 				LastUpgradeCheck = 1530;
 				TargetAttributes = {
 					05C613262BE0180A00802E94 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					05C613422BE0340B00802E94 = {
 						CreatedOnToolsVersion = 15.3;
 					};
 				};
@@ -121,6 +220,7 @@
 			projectRoot = "";
 			targets = (
 				05C613262BE0180A00802E94 /* golfgolf */,
+				05C613422BE0340B00802E94 /* watchgolfgolf Watch App */,
 			);
 		};
 /* End PBXProject section */
@@ -135,6 +235,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		05C613412BE0340B00802E94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -142,13 +249,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05C6133E2BE01ED300802E94 /* HoleView.swift in Sources */,
+				05C613882BE719ED00802E94 /* ConnectivitySessionManager.swift in Sources */,
+				05C6138A2BE7254900802E94 /* StatsView.swift in Sources */,
 				05C6132D2BE0180A00802E94 /* ContentView.swift in Sources */,
 				05C6132F2BE0180A00802E94 /* Item.swift in Sources */,
 				05C6132B2BE0180A00802E94 /* golfgolfApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		05C6133F2BE0340B00802E94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05C613842BE70F3100802E94 /* ContentView.swift in Sources */,
+				05C6137F2BE70F3100802E94 /* FinishGameView.swift in Sources */,
+				05C613832BE70F3100802E94 /* watchgolfgolfApp.swift in Sources */,
+				05C613822BE70F3100802E94 /* SnapShotView.swift in Sources */,
+				05C613802BE70F3100802E94 /* ConnectivityManager.swift in Sources */,
+				05C613812BE70F3100802E94 /* HoleView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		05C6134F2BE0340C00802E94 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05C613422BE0340B00802E94 /* watchgolfgolf Watch App */;
+			targetProxy = 05C6134E2BE0340C00802E94 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		05C613362BE0180C00802E94 /* Debug */ = {
@@ -268,6 +399,7 @@
 		05C613392BE0180C00802E94 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = golfgolf/golfgolf.entitlements;
@@ -278,6 +410,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.sports";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -296,7 +429,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = lasermatts.golfgolf;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -306,6 +440,7 @@
 		05C6133A2BE0180C00802E94 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = golfgolf/golfgolf.entitlements;
@@ -316,6 +451,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.sports";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -334,10 +470,72 @@
 				PRODUCT_BUNDLE_IDENTIFIER = lasermatts.golfgolf;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		05C613522BE0340C00802E94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"watchgolfgolf Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = HZD75MW6ZL;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = watchgolfgolf;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = lasermatts.golfgolf;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = lasermatts.golfgolf.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.4;
+			};
+			name = Debug;
+		};
+		05C613532BE0340C00802E94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"watchgolfgolf Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = HZD75MW6ZL;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = watchgolfgolf;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = lasermatts.golfgolf;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = lasermatts.golfgolf.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.4;
 			};
 			name = Release;
 		};
@@ -358,6 +556,15 @@
 			buildConfigurations = (
 				05C613392BE0180C00802E94 /* Debug */,
 				05C6133A2BE0180C00802E94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05C613512BE0340C00802E94 /* Build configuration list for PBXNativeTarget "watchgolfgolf Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05C613522BE0340C00802E94 /* Debug */,
+				05C613532BE0340C00802E94 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

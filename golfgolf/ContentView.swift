@@ -9,58 +9,80 @@ import SwiftUI
 import SwiftData
 
 struct ContentView: View {
-    @Environment(\.modelContext) private var modelContext
-    @Query private var items: [Item]
+    @EnvironmentObject var connectivityManager: ConnectivitySessionManager
+
+    @State private var gameType: String = "disc" // default to disc golf
+    @State private var numberOfHoles: Int = 9 // default to 9 holes
+    @State private var parType: String = "standard" // default to standard par
 
     var body: some View {
-        NavigationSplitView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
-                    } label: {
-                        Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
+        NavigationView {
+            Form {
+                Section {
+                    NavigationLink(destination: StatsView()) {
+                        HStack {
+                            Image(systemName: "chart.bar")
+                                .foregroundColor(.green)
+                            Text("View Stats")
+                                .fontWeight(.bold)
+                        }
+                        .frame(maxWidth: .infinity, alignment: .center)
+                    }
+                    .buttonStyle(PlainButtonStyle()) // Use PlainButtonStyle for better customization
+                }
+
+                Section(header: Text("Connection Status")) {
+                    if connectivityManager.isConnected {
+                        Label("Connected", systemImage: "checkmark.circle.fill")
+                            .foregroundColor(.green)
+                    } else {
+                        Label("Not Connected", systemImage: "xmark.circle.fill")
+                            .foregroundColor(.red)
+                    }
+                    
+                    if let error = connectivityManager.lastError {
+                        Text("Error: \(error)")
+                            .foregroundColor(.red)
+                            .font(.caption)
                     }
                 }
-                .onDelete(perform: deleteItems)
-            }
-#if os(macOS)
-            .navigationSplitViewColumnWidth(min: 180, ideal: 200)
-#endif
-            .toolbar {
-#if os(iOS)
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-#endif
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
+                
+                Section(header: Text("Game Type")) {
+                    Picker("Select Game Type", selection: $gameType) {
+                        Text("Ball Golf").tag("ball")
+                        Text("Disc Golf").tag("disc")
                     }
+                    .pickerStyle(SegmentedPickerStyle())
+                }
+                
+                Section(header: Text("Number of Holes")) {
+                    Picker("Select Number of Holes", selection: $numberOfHoles) {
+                        Text("9 Holes").tag(9)
+                        Text("18 Holes").tag(18)
+                    }
+                    .pickerStyle(SegmentedPickerStyle())
+                }
+                
+                Section(header: Text("Par Configuration")) {
+                    Picker("Select Par Type", selection: $parType) {
+                        Text("Standard Par 3").tag("standard")
+                        Text("Custom Par").tag("custom")
+                    }
+                    .pickerStyle(SegmentedPickerStyle())
+                }
+                
+                NavigationLink(destination: HoleView(gameType: $gameType, numberOfHoles: $numberOfHoles, parType: $parType)) {
+                    Text("Start Game")
                 }
             }
-        } detail: {
-            Text("Select an item")
-        }
-    }
-
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(timestamp: Date())
-            modelContext.insert(newItem)
-        }
-    }
-
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            for index in offsets {
-                modelContext.delete(items[index])
-            }
+            .navigationBarTitle("GolfGolf")
         }
     }
 }
 
-#Preview {
-    ContentView()
-        .modelContainer(for: Item.self, inMemory: true)
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+            .environmentObject(ConnectivitySessionManager())
+    }
 }
