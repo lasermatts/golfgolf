@@ -8,9 +8,16 @@
 import SwiftUI
 
 struct StatsView: View {
+    @ObservedObject var statsModel = StatsModel.shared
+
     var body: some View {
-        // Assuming stats are stored in some form of observable object or passed directly
-        Text("Game Statistics")
-            .navigationTitle("Stats")
+        List {
+            Section(header: Text("Game Stats")) {
+                Text("Total Score: \(statsModel.totalScore)")
+                Text("Game Duration: \(statsModel.formattedDuration)")
+                Text("Date: \(statsModel.formattedDate)")
+            }
+        }
+        .navigationTitle("Statistics")
     }
 }
