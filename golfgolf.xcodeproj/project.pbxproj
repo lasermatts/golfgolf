@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		058C71C22BE9A5CD00AD093B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05C613302BE0180C00802E94 /* Assets.xcassets */; };
 		05C6132B2BE0180A00802E94 /* golfgolfApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C6132A2BE0180A00802E94 /* golfgolfApp.swift */; };
 		05C6132D2BE0180A00802E94 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C6132C2BE0180A00802E94 /* ContentView.swift */; };
 		05C6132F2BE0180A00802E94 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C6132E2BE0180A00802E94 /* Item.swift */; };
@@ -24,7 +25,6 @@
 		05C613A82BE84E2900802E94 /* watchgolfgolf-Watch-App-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 05C613A72BE84E2900802E94 /* watchgolfgolf-Watch-App-Info.plist */; };
 		05C613AA2BE85E1C00802E94 /* ConnectivitySessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C613872BE719ED00802E94 /* ConnectivitySessionManager.swift */; };
 		05C613B02BE861F000802E94 /* StatsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C613AF2BE861F000802E94 /* StatsModel.swift */; };
-		05C613B22BE86DDB00802E94 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 05C613B12BE86DDB00802E94 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,6 +125,7 @@
 		05C613292BE0180A00802E94 /* golfgolf */ = {
 			isa = PBXGroup;
 			children = (
+				05C613B12BE86DDB00802E94 /* Info.plist */,
 				05C6132A2BE0180A00802E94 /* golfgolfApp.swift */,
 				05C613872BE719ED00802E94 /* ConnectivitySessionManager.swift */,
 				05C613AF2BE861F000802E94 /* StatsModel.swift */,
@@ -132,7 +133,6 @@
 				05C613892BE7254900802E94 /* StatsView.swift */,
 				05C6133D2BE01ED300802E94 /* HoleView.swift */,
 				05C6132E2BE0180A00802E94 /* Item.swift */,
-				05C613B12BE86DDB00802E94 /* Info.plist */,
 				05C613302BE0180C00802E94 /* Assets.xcassets */,
 				05C613322BE0180C00802E94 /* golfgolf.entitlements */,
 				05C613332BE0180C00802E94 /* Preview Content */,
@@ -262,7 +262,6 @@
 			files = (
 				05C613352BE0180C00802E94 /* Preview Assets.xcassets in Resources */,
 				05C613312BE0180C00802E94 /* Assets.xcassets in Resources */,
-				05C613B22BE86DDB00802E94 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +269,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				058C71C22BE9A5CD00AD093B /* Assets.xcassets in Resources */,
 				05C613A82BE84E2900802E94 /* watchgolfgolf-Watch-App-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

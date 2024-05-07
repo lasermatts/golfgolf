@@ -101,7 +101,7 @@ struct FilledButton: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
             .padding()
-            .background(Color.blue)
+            .background(Color.accentColor)
             .foregroundColor(.white)
             .clipShape(RoundedRectangle(cornerRadius: 10))
     }
