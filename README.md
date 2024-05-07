@@ -4,11 +4,20 @@
 
 GolfGolf is a mobile application designed to enhance the golfing experience by providing a digital scorecard for both iOS and Apple Watch. The app allows users to easily track their scores while playing golf, leveraging the convenience of their Apple Watch or iPhone to keep track without the need for traditional pen and paper.
 
+
 ### Key Features
 
 - **Start Game Configuration**: Users can set up their game by selecting the type of golf (Ball or Disc), number of holes (9 or 18), and par configuration (Standard or Custom).
+
+![GolfGolf's configuration view on the Apple Watch](https://github.com/lasermatts/golfgolf/blob/main/reference_pics/watch_setup_may6.png)
+
 - **Real-time Scoring**: On the Apple Watch, users can increment or decrement their stroke count with a simple tap, view their total score, and move between holes seamlessly.
+
+![GolfGolf's score snapshot view on the Apple Watch](https://github.com/lasermatts/golfgolf/blob/main/reference_pics/watch_snapshot_may6.png)
 - **Finish Game Review**: At the end of a round, users can send their total scores, along with other game metrics, directly to their iPhone for more detailed viewing and analysis.
+
+![Finished game as seen on the Apple Watch while transferring data to your iPhone](https://github.com/lasermatts/golfgolf/blob/main/reference_pics/watch_finished_may6.png)
+
 - **Statistics View**: Post-game, users can view detailed statistics on their iPhone, including total score, game duration, and specific scores per hole.
 
 ## Design Strategy
