@@ -1,4 +1,5 @@
 # GolfGolf: Your Digital Scorecard
+![alt text](https://github.com/lasermatts/golfgolf/blob/main/golfgolf/Assets.xcassets/golfgolf_logo_medium.jpeg "GolfGolf")
 
 ## Overview
 
